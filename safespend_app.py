@@ -56,6 +56,7 @@ def get_finance_advice_with_ollama(total_income, total_received, total_spent, ca
     Remember to give an in depth analysis and act like a financial coach who analyzes separate category's expenditure in depth. 
     
     Present this advice in an encouraging tone that motivates positive change.
+    Also remember to not ask any question in the end at all. This is a one time advice and not a conversation. So don't ask any question
     """
     try:
         response = ollama.chat(
@@ -118,4 +119,5 @@ if uploaded_file is not None and user_income > 0:
     st.write(advice)
 
 else:
+
     st.info("Please upload a transaction Excel file and enter your monthly income.")
