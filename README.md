@@ -22,6 +22,9 @@ text
 3. Run the app locally:
 
 streamlit run streamlit_app.py
+Or
+python -m streamlit run "YOUR_PATH/safespend_app.py"
+
 
 text
 
